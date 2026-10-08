@@ -1,42 +1,60 @@
 alabaster==0.7.13
     # via sphinx
+babel==2.18.0
+    # via
+    #   -c base.txt
+    #   sphinx
 certifi==2026.2.25
-    # via requests
+    # via
+    #   requests
+    #   sphinx-prompt
 charset-normalizer==3.4.4
     # via requests
 docutils==0.20.1
     # via
     #   sphinx
+    #   sphinx-markdown-builder
     #   sphinx-prompt
     #   sphinx-rtd-theme
+idna==3.11
+    # via
+    #   -c base.txt
+    #   requests
+    #   sphinx-prompt
 imagesize==1.5.0
     # via sphinx
-importlib-metadata==8.5.0
+jinja2==3.1.6
+    # via
+    #   sphinx
+    #   sphinx-prompt
+markupsafe==2.1.5
+    # via jinja2
+packaging==26.0
     # via
     #   -c base.txt
     #   sphinx
-jinja2==3.1.6
-    # via sphinx
-markupsafe==2.1.5
-    # via jinja2
-pytz==2026.1.post1
+pygments==2.19.2
     # via
     #   -c base.txt
-    #   babel
+    #   sphinx
+    #   sphinx-prompt
 requests==2.32.4
-    # via sphinx
+    # via
+    #   sphinx
+    #   sphinx-prompt
 snowballstemmer==3.0.1
     # via sphinx
 sphinx==7.1.2
     # via
     #   -r extra-doc.in
+    #   sphinx-markdown-builder
     #   sphinx-prompt
     #   sphinx-rtd-theme
     #   sphinxcontrib-jquery
     #   sphinxcontrib-trio
 sphinx-markdown-builder==0.6.10
     # via -r extra-doc.in
-sphinx-prompt==1.7.0
+sphinx-prompt==1.10.2
     # via -r extra-doc.in
 sphinx-rtd-theme==3.1.0
     # via -r extra-doc.in
@@ -60,9 +78,7 @@ tabulate==0.9.0
     # via sphinx-markdown-builder
 tomli==2.4.0
     # via -r extra-doc.in
-urllib3==2.2.3
-    # via requests
-zipp==3.20.2
+urllib3==2.8.0
     # via
-    #   -c base.txt
-    #   importlib-metadata
+    #   requests
+    #   sphinx-prompt
